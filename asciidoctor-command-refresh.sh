@@ -2,8 +2,9 @@
 IFS=$'\n'
 
 # Set up vars.  Set the correct paths here
-file="/path/to/asciidoctor-auto-run/adoc/command.adoc"
-mainfile="/path/to/asciidoctor-auto-run/adoc/index.adoc"
+adoc="/path/to/asciidoctor-auto-run/adoc"
+file="$adoc/command.adoc"
+mainfile="$adoc/index.adoc"
 command="$1"
 escape_command=$(echo $command | sed 's/|/\\|/ ')
 out=$(echo $command | bash)
