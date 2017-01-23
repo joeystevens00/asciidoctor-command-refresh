@@ -10,7 +10,7 @@ out=$(echo $command | bash)
 
 pretty_print() {
 for i in $(echo -e "$1"); do
-        echo -e "$i\n"
+        echo -e "$i"
 done
 }
 
@@ -18,7 +18,7 @@ done
 
 # Write to file
 echo "
-[cols=\"1,3\"]
+[cols=\"1d,3l\"]
 |===
 | Command | Output  
 | $escape_command
