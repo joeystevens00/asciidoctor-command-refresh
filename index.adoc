@@ -1,0 +1,6 @@
+# Bash Output
+Displays the output of command
+
+include::command.adoc[]
+
+
